@@ -2,6 +2,7 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import NavMenu from './NavMenu';
+import AuthProvider from './AuthProvider';
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -15,8 +16,10 @@ export default function RootLayout({
 }) {
   return (
     <>
-      <NavMenu />
-      {children}
+      <AuthProvider>
+        <NavMenu />
+        {children}
+      </AuthProvider>
     </>
   )
 }
