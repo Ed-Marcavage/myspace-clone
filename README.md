@@ -1,4 +1,13 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Setup
+
+```
+git clone <this-repo> nextcourse
+cd nextcourse
+npm install
+```
+
+- Rename the `.env.example` file to `.env` and update env variables.
+- I am using a free [NeonDB](https://neon.tech) Postgres database, but any Prisma compatible DB will work. 
 
 ## Getting Started
 
